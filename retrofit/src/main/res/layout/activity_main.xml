@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="huang.com.retrofit.MainActivity">
+
+  <Spinner
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/spinner"
+      android:entries="@array/citys"></Spinner>
+
+
+  <Button
+      android:id="@+id/start_app"
+      android:layout_width="400dp"
+      android:layout_height="wrap_content"
+      android:text="启动App"/>
+
+
+  <Button
+      android:id="@+id/get_info"
+      android:layout_width="400dp"
+      android:layout_height="wrap_content"
+      android:text="获取数据"/>
+
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/text_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+  </ScrollView>
+
+</LinearLayout>
